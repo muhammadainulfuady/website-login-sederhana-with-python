@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/static/profile.jpg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Beranda</title>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di Aplikasi</h1>
+      <nav>
+        <a href="/login">Login</a>
+        <a href="/signup">Daftar</a>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="{{ url_for('static', filename='profile.jpg') }}"
+        alt="Foto Profil"
+        style="width: 150px; border-radius: 75px; margin-bottom: 20px"
+      />
+      <p>
+        Ini adalah halaman beranda. Silakan login atau daftar untuk melanjutkan.
+      </p>
+    </main>
+    <footer>
+      <img
+        src="{{ url_for('static', filename='profile.jpg') }}"
+        alt="Foto Profil"
+        style="width: 50px; border-radius: 40px; margin-right: 10px"
+      />
+      <p style="display: inline">
+        Aplikasi by Muhammad Ainul Fuady Dengan Dibantu Oleh ChatGPT &copy;
+        2024. Semua Hak Dilindungi.
+      </p>
+    </footer>
+  </body>
+</html>
